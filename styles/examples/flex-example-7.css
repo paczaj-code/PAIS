@@ -1,0 +1,12 @@
+.example-flex-7.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+
+.example-flex-7.flex-container div {
+  width: 130px;
+  height: 170px;
+}

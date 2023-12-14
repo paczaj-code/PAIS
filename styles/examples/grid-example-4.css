@@ -1,0 +1,26 @@
+.grid-container.example-grid-4 {
+    grid-template-areas: "element1 element1 element1 ."
+                          "element3 element4 element4 element2"
+                          "element5 element5 element5 ."
+    ;
+}
+
+.grid-container.example-grid-4 div:nth-child(1) {
+ grid-area: element1;
+}
+
+.grid-container.example-grid-4 div:nth-child(2) {
+    grid-area: element2;
+}
+
+.grid-container.example-grid-4 div:nth-child(3) {
+    grid-area: element3
+}
+
+.grid-container.example-grid-4 div:nth-child(4) {
+    grid-area: element4
+}
+
+.grid-container.example-grid-4 div:nth-child(5) {
+    grid-area: element5
+}

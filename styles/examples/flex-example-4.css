@@ -1,0 +1,11 @@
+.example-flex-4.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+
+.example-flex-4.flex-container > div {
+  padding: 0;
+  width: 25%;
+}

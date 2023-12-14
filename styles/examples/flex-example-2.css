@@ -1,0 +1,22 @@
+.example-flex-2.flex-container {
+  display: flex;
+  gap: 3px;
+}
+
+.example-flex-2.flex-container > div {
+  padding: 0;
+  flex-grow: 1;
+}
+
+.example-flex-2a.flex-container {
+  display: flex;
+  gap: 3px;
+}
+.example-flex-2a.flex-container > div {
+  /* padding-inline: 30px; */
+  width: 50px;
+}
+
+.example-flex-2a.flex-container div:nth-child(odd) {
+  flex-grow: 1;
+}

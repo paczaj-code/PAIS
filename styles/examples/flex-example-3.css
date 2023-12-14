@@ -1,0 +1,10 @@
+.example-flex-3.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.example-flex-3.flex-container > div {
+  flex-grow: 1;
+  padding: 0;
+}

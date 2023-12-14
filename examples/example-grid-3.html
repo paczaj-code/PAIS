@@ -1,0 +1,45 @@
+<div class="example_wrapper ">
+    <h2 class="example-title">Przyklad <code class="code">grid</code> 3</h2>
+    <p>Przykład z uzyciem <i>named lines</i>. Nazwy podajemy w nawiasch kwadratowych</p>
+    <p>Składnia dla</p>
+    <pre
+        data-lang="CSS"><code class="language-css">grid-template-&lt;columns or rows&gt; :[fist-line-name] &lt;size&gt; [name1 name2] &lt;size&gt; .... [last-line-name];</code></pre>
+    <div class="example-grid-3 grid-container examples-autonumber examples-colored">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+    </div>
+
+    <div class="codes">
+        <pre data-lang="CSS"><code class="language-css">
+.grid-container {
+    display:grid; 
+    grid-template-columns: [column-medium-start] 2fr [column-medium-end column-thin-start] 1fr [column-thin-end column-wide-start] 3fr [column-wide-end];
+    grid-template-rows: [row-medium-start] 2fr [row-medium-end row-wide-start] 4fr [row-wide-end row-thin-start] 1fr [row-thin-end]
+}
+
+.grid-container div:nth-child(1) {
+    grid-row: row-medium-start / row-wide-end;
+    grid-column: column-medium-start / column-thin-end;
+}
+
+/* .grid-container div:nth-child(2) {
+    Kod niepotrzebny element ułóżony w siatce automatycznie
+} */
+
+.grid-container div:nth-child(3) {
+    grid-area: row-medium-start / column-thin-end / row-medium-end / column-wide-end;
+}
+
+.grid-container div:nth-child(4) {
+    grid-area: row-thin-start/ column-medium-end / row-thin-end / column-wide-end 
+}
+
+.grid-container div:nth-child(5) {
+    grid-area: row-thin-start/ column-medium-start / row-thin-end / column-medium-end
+
+}</code></pre>
+    </div>
+</div>

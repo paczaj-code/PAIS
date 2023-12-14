@@ -1,0 +1,31 @@
+<div class="example_wrapper ">
+  <h2 class="example-title">Przyklad <code class="code">grid</code> 9</h2>
+  <p>Przykład cetrowania elementu</p>
+  <div class="example-grid-9 grid-container examples-autonumber examples-colored">
+    <div class="item-1"></div>
+  </div>
+  <div class="example-grid-9a grid-container examples-autonumber examples-colored">
+    <div class="item-1"></div>
+  </div>
+
+  <div class="codes">
+    <pre data-lang="CSS"><code class="language-css">/* Przykład 1 */
+.grid-container {
+  display:grid; 
+  min-height: 300px;
+  place-content: center;
+}
+
+/* Przykład 2 */
+.grid-container {
+  display:grid; 
+  min-height: 300px;
+}      
+      
+.grid-container.item-1 {
+  place-self: center;
+}
+        </code></pre>
+  </div>
+
+</div>

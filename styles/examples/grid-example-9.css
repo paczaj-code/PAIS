@@ -1,0 +1,18 @@
+.grid-container.example-grid-9,
+.grid-container.example-grid-9a {
+  min-height: 300px;
+}
+
+.grid-container.example-grid-9a {
+  place-content: center;
+}
+
+.grid-container.example-grid-9 .item-1 {
+  place-self: center;
+}
+
+.grid-container.example-grid-9 .item-1,
+.grid-container.example-grid-9a .item-1 {
+  width: 200px;
+  height: 200px;
+}

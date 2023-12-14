@@ -1,0 +1,38 @@
+.grid-header.example-grid-7 {
+  grid-template-columns: auto 1fr auto;
+  padding: 0 1.5rem;
+}
+
+.grid-header.example-grid-7 .logo_example {
+  grid-column: 1 / 2;
+  width: auto;
+  align-self: center;
+}
+
+.grid-header.example-grid-7 .top_nav {
+  grid-column: 2 / 3;
+  align-self: center;
+}
+
+.top_nav .top_nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  list-style: none;
+}
+
+.grid-header.example-grid-7 .user {
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.user .user_avatar {
+  font-size: 2.7rem;
+}
+
+.user .user_username {
+  font-size: 1.4rem;
+}

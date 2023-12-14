@@ -1,0 +1,9 @@
+.grid-container.example-grid-8 {
+  grid-template-columns: repeat(auto-fill, 10rem);
+  justify-content: center;
+}
+
+.grid-container.example-grid-8a {
+  grid-template-columns: repeat(auto-fit, 10rem);
+  justify-content: center;
+}

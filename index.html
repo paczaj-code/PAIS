@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praca PAIS I</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/prism2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Noto+Sans+Mono&family=Nunito+Sans:opsz@6..12&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="line-numbers">
+    <div class="app">
+        <header class="header">
+            <div class="logo">
+                <h2>PAIS</h2>
+                <span>Zadanie 1</span>
+            </div>
+            <nav class="top_navigation">
+                <button class="btn btn-big top_navigation-item ">
+                    <i class="ti ti-home-link"></i>
+                    <!-- <span>Grid</span> -->
+                </button>
+                <button class="btn btn-big top_navigation-item active" data-target="examples-grid">
+                    <i class="ti ti-layout-board-split"></i>
+                    <span>Grid</span>
+                </button>
+                <button class="btn btn-big top_navigation-item" data-target="examples-flex">
+                    <i class="ti ti-layout-grid"></i>
+                    <span>Flex</span>
+                </button>
+            </nav>
+            <div class="author">
+                <div class="avatar">
+                    <img src="./assets/images/paczaj2.JPG" alt="avatar" />
+                </div>
+                <span>Marcin <br />Paczkowski</span>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <button type="button" class="btn btn-mobile_menu">
+                <i class="ti ti-menu-2"></i>
+            </button>
+            <div class="examples_list examples-grid active">
+                <h3 class="examples_list-title">Przykłady Grid</h3>
+                <ol>
+                    <li class="examples_list-item" data-example="example-grid-1">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Prosty grid</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-grid-2">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Shorthand</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-grid-3">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Named lines</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-grid-4">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>grid-template-areas</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-grid-5">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Pozycjonowanie elementów</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-grid-6">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Układ strony</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-grid-7">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Header</span>
+                        </div>
+                    </li>
+
+                    <li class="examples_list-item" data-example="example-grid-8">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>auto-fit, auto-fill</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-grid-9">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Centrowanie diva</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-grid-10">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Animacja 'height'</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="examples_list examples-flex">
+                <h3 class="examples_list-title">Przykłady Flex</h3>
+                <ol>
+                    <li class="examples_list-item" data-example="example-flex-1">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Prosty flex</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-flex-2">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>'flex-grow'</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-flex-3">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>'flex-direction'</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-flex-4">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>'flex-wrap'</span>
+                        </div>
+                    </li>
+                    <li class="examples_list-item" data-example="example-flex-4">
+                        <div class="examples_list-desc">
+                            <span>Przykład</span>
+                            <span>Położenie elementów 1</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </aside>
+        <main class="content">
+
+        </main>
+
+        <footer class="footer">footer</footer>
+    </div>
+    <div class="overlay"></div>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <script>
+        const example10 = () => {
+            const toggle_button_title = document.querySelector('.toggle_click > span')
+            toggle_button_title.textContent !== 'Click to hide' ? toggle_button_title.textContent = 'Click to hide'
+                : toggle_button_title.textContent = 'Click to show';
+            document.querySelector('.animated-grid').classList.toggle('expand_rows');
+        }
+    </script>
+</body>
+
+</html>

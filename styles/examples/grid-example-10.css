@@ -1,0 +1,57 @@
+..example-10 {
+  margin-bottom: 20px;
+}
+
+.example-10 .btn {
+  background-color: hsla(226, 23%, 21%, 0.76);
+  border-color: hsla(226, 23%, 41%, 0.76);
+  display: inline;
+  margin-right: 10px;
+  transition: border 0.3s linear;
+}
+
+.example-10 .animated-grid {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-in-out;
+  margin: 10px 0 20px;
+}
+
+.example-10 .btn.show_hover:hover ~ .animated-grid {
+  grid-template-rows: 1fr;
+}
+
+.example-10 .btn i {
+  margin-right: 10px;
+}
+
+.example-10 .btn:hover {
+  border-color: hsla(207, 81%, 75%, 0.459);
+}
+
+.example-10 .animated-grid.expand_rows {
+  grid-template-rows: 1fr;
+}
+
+.item-1 {
+  overflow: hidden;
+  background-color: hsla(213, 29%, 21%, 0.4) !important;
+  /* border: solid 2px hsla(213, 13%, 34%, 0.253); */
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.699);
+  padding-inline: 20px;
+  box-shadow: 0 0 0 2px hsla(213, 29%, 11%, 0.4) inset,
+    0 3px 4px rgba(0, 0, 0, 0.699);
+}
+.example-10 .item-1 > p {
+  margin-top: 2px;
+}
+
+.example-10 .item-1 > h3 {
+  margin-block: 10px 0px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.76);
+  text-decoration: underline var(--color-2);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  padding-bottom: 2px;
+}

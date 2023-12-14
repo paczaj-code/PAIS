@@ -1,0 +1,38 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-block: 10px;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+p {
+  margin-block: 1rem;
+}
+
+code {
+  height: min-content;
+  color: hsl(199, 88%, 60%) !important;
+  padding: 0;
+  line-height: 1;
+  /* text-shadow: 1px 1px 2px black; */
+  font-variant: normal;
+}

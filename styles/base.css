@@ -1,0 +1,41 @@
+:root {
+  --color-1: hsl(199, 100%, 18%);
+  --color-2: hsl(248, 28%, 43%);
+  --color-3: hsl(324, 45%, 53%);
+  --color-4: hsl(10, 87%, 49%);
+  --color-5: hsl(39, 100%, 40%);
+  --text-color: hsl(0, 0%, 93%);
+  --color-orange-1: ;
+}
+
+/* minimal reset */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

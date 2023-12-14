@@ -1,0 +1,81 @@
+<div class="example_wrapper">
+  <h2 class="example-title">Przyklad <code class="code">grid</code> 7</h2>
+  <p>Przykładowy header </p>
+  <header class="example-grid-7 grid-header">
+    <div class="logo_example">
+      <h3>Logo</h3>
+    </div>
+    <nav class="top_nav">
+      <ul class="top_nav-list">
+        <li class="top_nav-item">Link 1</li>
+        <li class="top_nav-item">Link 2</li>
+        <li class="top_nav-item">Link 3</li>
+      </ul>
+    </nav>
+    <div class="user">
+      <div class="user_avatar"><i class="ti ti-user-square-rounded"></i></div>
+      <div class="user_username">Jaś Fasola</div>
+    </div>
+  </header>
+  <div class="codes">
+    <pre data-lang="HTML"><code class="language-html">&lt;header class="grid-header "&gt;
+  &lt;div class="logo_example"&gt;
+    &lt;h3&gt;Logo&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;nav class="top_nav"&gt;
+    &lt;ul class="top_nav-list"&gt;
+      &lt;li class="top_nav-item"&gt;Link 1&lt;/li&gt;
+      &lt;li class="top_nav-item"&gt;Link 2&lt;/li&gt;
+      &lt;li class="top_nav-item"&gt;Link 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;div class="user"&gt;
+    &lt;div class="user_avatar"&gt;&lt;i class="ti ti-user-square-rounded"&gt;&lt;/i&gt;&lt;/div&gt;
+    &lt;div class="user_username"&gt;Jaś Fasola&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+  </div>
+
+  <div class="codes">
+    <pre data-lang="CSS"><code class="language-css">.grid-header{
+  display:grid; 
+  grid-template-columns: auto 1fr auto;
+  padding: 0 1.5rem;
+}
+    
+.grid-header .logo_example {
+  grid-column: 1 / 2;
+  width: auto;
+  align-self: center;
+}
+    
+.grid-header.example-grid-7 .top_nav {
+  grid-column: 2 / 3;
+  align-self: center;
+}
+    
+.top_nav .top_nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  list-style: none;
+}
+    
+.grid-header.example-grid-7 .user {
+  grid-column: 3 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+    
+.user .user_avatar {
+  font-size: 2.7rem;
+}
+    
+.user .user_username {
+ font-size: 1.4rem;
+}
+      </code></pre>
+  </div>
+</div>

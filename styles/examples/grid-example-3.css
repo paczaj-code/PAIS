@@ -1,0 +1,26 @@
+.grid-container.example-grid-3 {
+    grid-template-columns: [column-medium-start] 2fr [column-medium-end column-thin-start] 1fr [column-thin-end column-wide-start] 3fr [column-wide-end];
+    grid-template-rows: [row-medium-start] 2fr [row-medium-end row-wide-start] 4fr [row-wide-end row-thin-start] 1fr [row-thin-end]
+}
+
+.grid-container.example-grid-3 div:nth-child(1) {
+grid-row: row-medium-start / row-wide-end;
+grid-column: column-medium-start / column-thin-end;
+}
+
+/* .grid-container.example-grid-3 div:nth-child(2) {
+
+} */
+
+.grid-container.example-grid-3 div:nth-child(3) {
+   grid-area: row-medium-start / column-thin-end / row-medium-end / column-wide-end;
+}
+
+.grid-container.example-grid-3 div:nth-child(4) {
+    grid-area: row-thin-start/ column-medium-end / row-thin-end / column-wide-end 
+}
+
+.grid-container.example-grid-3 div:nth-child(5) {
+    grid-area: row-thin-start/ column-medium-start / row-thin-end / column-medium-end
+
+}

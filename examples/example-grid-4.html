@@ -1,0 +1,38 @@
+<div class="example_wrapper ">
+    <h2 class="example-title">Przyklad <code class="code">grid</code> 4</h2>
+    <p>Przykład z użyciem nazw obszarów.</p>
+    <div class="example-grid-4 grid-container examples-autonumber examples-colored">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+    </div>
+    <pre data-lang="CSS"><code class="language-css">.grid-container {
+ display:grid; 
+ grid-template-areas: "element1 element1 element1 ."
+                          "element3 element4 element4 element2"
+                          "element5 element5 element5 .";
+}
+
+.grid-container div:nth-child(1) {
+ grid-area: element1;
+}
+
+.grid-container div:nth-child(2) {
+ grid-area: element2;
+}
+
+.grid-container div:nth-child(3) {
+ grid-area: element3
+}
+
+.grid-container div:nth-child(4) {
+ grid-area: element4
+}
+
+.grid-container div:nth-child(5) {
+ grid-area: element5
+}  </code></pre>
+</div>
+</div>

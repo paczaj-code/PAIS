@@ -1,0 +1,75 @@
+<div class="example_wrapper">
+  <h2 class="example-title">Przyklad <code class="code">grid</code> 10</h2>
+  <p>
+    Animacja wysokości elementu DOM czystym CSS nie jest prosta. Grid rozwiązuje
+    ten problem
+  </p>
+
+  <div class="example-10">
+    <button class="btn btn-big show_hover">
+      <i class="ti ti-hand-finger"></i>Hover me
+    </button>
+    <button class="btn btn-big toggle_click" onclick="example10()">
+      <i class="ti ti-click"></i><span>Click to show</span>
+    </button>
+    <div class="animated-grid">
+      <div class="item-1">
+        <h3>Dolore quasi nulla.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum et illo
+          soluta numquam similique inventore optio vel, dolore quasi nulla
+          voluptatibus accusamus! Impedit voluptatum blanditiis molestias esse,
+          quia minima totam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <h3>CSS</h3> -->
+  <div class="codes">
+    <pre data-lang="HTML"><code class="language-html">&lt;div class="example-10"&gt;
+      &lt;button class="btn btn-big show_hover"&gt;&lt;i class="ti ti-hand-finger"&gt;&lt;/i&gt;Hover me&lt;/button&gt;
+      &lt;button class="btn btn-big toggle_click" onclick="example10()"&gt;
+        &lt;i class="ti ti-click"&gt;&lt;/i&gt;
+        &lt;span&gt;Click to show&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class="animated-grid"&gt;
+        &lt;div class="item-1"&gt;
+          &lt;h3&gt;Dolore quasi nulla.&lt;/h3&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Rerum et illo soluta numquam similique inventore
+          optio vel, dolore quasi nulla voluptatibus accusamus! 
+          Impedit voluptatum blanditiis molestias esse, quia minima totam.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+&lt;/div&gt;  </code></pre>
+  </div>
+
+
+  <pre data-lang="CSS"><code class="language-css">.example-10 .animated-grid {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.2s ease;
+}
+
+/* aminate on hover */
+.example-10 .btn.show_hover:hover ~ .animated-grid {
+  grid-template-rows: 1fr;
+}
+
+/*class to toggle with JS */
+.example-10 .animated-grid.expand_rows {
+  grid-template-rows: 1fr;
+}
+
+.item-1 {
+  overflow: hidden;
+}</code></pre>
+  <pre data-lang="JavaScript"><code class="language-js">const example10 = () => {
+const toggle_button_title = document.querySelector('.toggle_click > span')
+toggle_button_title.textContent !== 'Click to hide' ? toggle_button_title.textContent = 'Click to hide'
+    : toggle_button_title.textContent = 'Click to show';
+document.querySelector('.animated-grid').classList.toggle('expand_rows');
+  }
+}</code></pre>
+</div>

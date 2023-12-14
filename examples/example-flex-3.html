@@ -1,0 +1,22 @@
+<div class="example_wrapper">
+    <h2 class="example-title">Przyklad <code class="code">flex</code> 3</h2>
+    <p><code>flex-direction</code> pozwala ustawić elementy w wierszach lub kolumnach, oraz odwracac kolejność</p>
+    <div class="example-flex-3 flex-container examples-autonumber examples-colored">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+    </div>
+    <div class="codes">
+        <pre data-lang="CSS"><code class="language-css">.flex-container {
+ display: flex;
+ flex-direction: row-reverse;
+ gap: 10px;
+}
+          
+.flex-container > div {
+ flex-grow: 1;
+}</code></pre>
+    </div>
+</div>

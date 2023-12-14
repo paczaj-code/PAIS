@@ -1,0 +1,38 @@
+<div class="example_wrapper">
+  <h2 class="example-title">Przyklad <code class="code">grid</code> 8</h2>
+  <p>
+    Przykład użycia <code>grid</code> na wzór <code>flex</code> za pomocą
+    <code>auto-fill</code> lub
+    <code>auto-fit</code>
+  </p>
+  <div class="example-grid-8 grid-container examples-autonumber examples-colored">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+    <div class="item-4"></div>
+    <div class="item-5"></div>
+  </div>
+  <div class="example-grid-8a grid-container examples-autonumber examples-colored">
+    <div class="item-1"></div>
+    <div class="item-2"></div>
+    <div class="item-3"></div>
+    <div class="item-4"></div>
+    <div class="item-5"></div>
+  </div>
+  <div class="codes"></div>
+  <div class="codes">
+    <pre data-lang="CSS"><code class=" language-css">/* Przykład 1 */
+.grid-container {
+display:grid; 
+grid-template-columns: repeat(auto-fill, 10rem);
+justify-content: center;
+}
+ 
+/* Przykład 2 */
+.grid-container {
+  display:grid; 
+  grid-template-columns: repeat(auto-fit, 10rem);
+  justify-content: center;
+}     </code></pre>
+  </div>
+</div>

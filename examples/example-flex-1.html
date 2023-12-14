@@ -1,0 +1,35 @@
+<div class="example_wrapper">
+    <h2 class="example-title">Przyklad <code class="code">flex</code> 1</h2>
+    <p>Prosty przykład z użyciem flex. W przeciwieństwie do <code>grid</code> domyślnie elementy zajmują jak najmniej
+        miejsca w
+        kontenerze.</p>
+    <div class="example-flex-1 flex-container examples-autonumber examples-colored">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+    </div>
+    <div class="codes">
+        <pre data-lang="CSS"><code class="language-css">.flex-container {
+ display: flex;
+ gap: 0px;
+}
+            
+.flex-container div:nth-child(2) {
+ width: 30px;
+}
+
+.flex-container div:nth-child(3) {
+ width: 80px;
+}
+            
+.flex-container div:nth-child(4) {
+ width: 100px;
+}
+            
+.flex-container div:nth-child(5) {
+ width: 40px;
+} </code></pre>
+    </div>
+</div>

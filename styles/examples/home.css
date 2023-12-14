@@ -1,0 +1,73 @@
+.hero {
+  border-bottom: 3px solid rgb(65, 65, 65);
+}
+
+.hero > h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 3px 3px black;
+  color: hsl(199, 88%, 50%);
+  margin-bottom: 0;
+  text-decoration: underline solid hsl(295, 100%, 30%);
+}
+
+.hero > h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+div[class^='article-'] {
+  background: hsla(213, 29%, 21%, 0.4) !important;
+  border-radius: 12px;
+  border: solid 2px hsla(213, 13%, 34%, 0.253);
+  box-shadow: 0 3px 3px 1px hsla(0, 0%, 0%, 0.7);
+  padding: 10px 20px;
+}
+
+div[class^='article-'] > h3 {
+  font-size: 2.7rem;
+  text-decoration: underline solid 4px hsl(295, 100%, 30%);
+  text-underline-offset: 10px;
+}
+
+.homepage-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1.25fr 0.7fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+}
+
+.article-1 {
+  grid-area: 1 / 1 / 2 / 3;
+  align-self: center;
+}
+
+.article-2 {
+  grid-area: 2 / 2 / 3 / -1;
+  align-self: center;
+}
+
+.article-3 {
+  grid-area: 3 / 1 / -1 / -1;
+}
+
+.image_wrapper .image_1 {
+  grid-area: 1 / 2 / -2 / -1;
+}
+
+.image_wrapper .image_2 {
+  grid-area: 2 / 1 / 2 / 2;
+  align-self: flex-end;
+}
+
+.image_wrapper > img {
+  border-radius: 12px;
+  border: solid 2px hsla(213, 13%, 34%, 0.253);
+  box-shadow: 0 3px 3px 1px hsla(0, 0%, 0%, 0.7);
+  overflow: hidden;
+  height: auto;
+}

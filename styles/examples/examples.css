@@ -1,0 +1,102 @@
+@import './home.css';
+@import './grid-example-1.css';
+@import './grid-example-2.css';
+@import './grid-example-3.css';
+@import './grid-example-4.css';
+@import './grid-example-5.css';
+@import './grid-example-6.css';
+@import './grid-example-7.css';
+@import './grid-example-8.css';
+@import './grid-example-9.css';
+@import './grid-example-10.css';
+@import './flex-example-1.css';
+@import './flex-example-2.css';
+@import './flex-example-3.css';
+@import './flex-example-4.css';
+
+[class^='example-grid-'],
+[class^='example-flex-'] {
+  margin-block: 20px;
+}
+.example-title {
+  font-size: 3rem;
+  border-bottom: solid 1px rgb(66, 66, 66);
+  padding: 0 0 2px;
+  margin-bottom: 20px;
+}
+
+.grid-container,
+.flex-container,
+.grid-header {
+  position: relative;
+  display: grid;
+  align-self: center;
+  flex: 1;
+  gap: 0.7rem;
+  padding: 19px 10px;
+  border-radius: 10px;
+  background-color: hsla(213, 59%, 31%, 0.2);
+  box-shadow: 0 3px 3px 1px hsla(0, 0%, 0%, 0.7);
+  border: 2px solid rgba(75, 86, 98, 0.255);
+}
+
+.flex-container {
+  display: flex;
+  gap: 0;
+}
+
+.grid-container::before,
+.flex-container::before {
+  content: 'Container';
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  font-size: 1.2rem;
+  opacity: 0.5;
+  /* font-family: 'Noto Sans Mono', 'Roboto Mono', monospace; */
+  font-style: italic;
+  /* bottom: -20px; */
+}
+
+.grid-container > div,
+.flex-container > div {
+  position: relative;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px hsla(0, 0%, 47%, 0.397);
+  box-shadow: 0 3px 4px black;
+  border-radius: 7px;
+}
+
+.examples-autonumber {
+  counter-reset: gridElements;
+}
+
+.examples-autonumber > div::before {
+  counter-increment: gridElements;
+  content: counter(gridElements);
+  font-size: 2.2rem;
+  text-shadow: 0 2px 2px black;
+}
+
+.examples-colored > div:nth-child(1) {
+  background: linear-gradient(hsl(19, 100%, 50%), hsl(19, 100%, 35%));
+}
+
+.examples-colored > div:nth-child(2) {
+  background: linear-gradient(hsl(204, 100%, 50%), hsl(204, 100%, 35%));
+}
+
+.examples-colored > div:nth-child(3) {
+  background: linear-gradient(hsl(170, 100%, 40%), hsl(170, 100%, 25%));
+}
+
+.examples-colored > div:nth-child(4) {
+  background: linear-gradient(hsl(286, 100%, 50%), hsl(286, 100%, 35%));
+}
+
+.examples-colored > div:nth-child(5) {
+  background: linear-gradient(hsl(76, 100%, 30%), hsl(76, 100%, 20%));
+}

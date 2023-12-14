@@ -1,0 +1,36 @@
+<div class="example_wrapper">
+    <h2 class="example-title">Przyklad <code class="code">flex</code> 2</h2>
+    <p>
+        <code>flex-grow</code> pozwala elementom zajmować wolne miejsce w kontenerze.
+    </p>
+    <div class="example-flex-2 flex-container examples-autonumber examples-colored">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+    </div>
+    <div class="example-flex-2a flex-container examples-autonumber examples-colored">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+    </div>
+    <div class="codes">
+        <pre data-lang="CSS"><code class="language-css">.flex-container {
+ display: flex;
+ gap: 3px;
+}
+
+/* Przykład 1  rozłożenne wszystkich elemntów*/
+flex-container > div {
+ flex-grow: 1;
+}
+
+/* Przykład 2  rozłożenne nieparzystych elemntów*/
+.flex-container div:nth-child(odd) {
+ flex-grow: 1;
+}</code></pre>
+    </div>
+</div>

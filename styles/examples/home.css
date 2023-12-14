@@ -59,9 +59,14 @@ div[class^='article-'] > h3 {
   grid-area: 1 / 2 / -2 / -1;
 }
 
+.image_wrapper{
+  align-self: stretch;
+ 
+}
+
 .image_wrapper .image_2 {
   grid-area: 2 / 1 / 2 / 2;
-  align-self: flex-end;
+ 
 }
 
 .image_wrapper > img {

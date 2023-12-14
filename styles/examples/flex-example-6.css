@@ -1,0 +1,29 @@
+.example-flex-6.flex-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.example-flex-6.flex-container div:nth-child(2){
+  width: 30px;
+  height: auto;
+  align-self: stretch;
+}
+
+.example-flex-6.flex-container div:nth-child(3) {
+  width: 80px;
+  height: 40px;
+  align-self: flex-start;
+}
+
+.example-flex-6.flex-container div:nth-child(4) {
+  width: 100px;
+  height: 120px;
+}
+
+.example-flex-6.flex-container div:nth-child(5) {
+  width: 40px;
+  align-self: flex-end;
+}

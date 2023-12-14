@@ -1,0 +1,43 @@
+<div class="example_wrapper">
+    <h2 class="example-title">Przyklad <code class="code">flex</code> 6</h2>
+    <p>Przykład ułożenia poszczególnych elementów za pomocą <code>align-self</code></p>
+    <div class="example-flex-6 flex-container examples-autonumber examples-colored">
+        <div class="item-1"></div>
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+        <div class="item-4"></div>
+        <div class="item-5"></div>
+    </div>
+
+    <div class="codes">
+        <pre data-lang="CSS"><code class="language-css">.flex-container {
+ display: flex;
+ gap: 10px;
+ justify-content: center;
+ align-items: center;
+}
+          
+          
+.flex-container div:nth-child(2){
+ width: 30px;
+ height: auto;
+ align-self: stretch;
+}
+          
+.flex-container div:nth-child(3) {
+ width: 80px;
+ height: 40px;
+ align-self: flex-start;
+}
+          
+.flex-container div:nth-child(4) {
+ width: 100px;
+ height: 120px;
+}
+          
+.flex-container div:nth-child(5) {
+ width: 40px;
+ align-self: flex-end;
+}</code></pre>
+    </div>
+</div>

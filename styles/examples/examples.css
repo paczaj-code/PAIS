@@ -13,6 +13,7 @@
 @import './flex-example-2.css';
 @import './flex-example-3.css';
 @import './flex-example-4.css';
+@import './flex-example-5.css';
 
 [class^='example-grid-'],
 [class^='example-flex-'] {
